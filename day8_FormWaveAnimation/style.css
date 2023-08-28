@@ -81,6 +81,7 @@ body {
 }
 
 .form-control label {
+  pointer-events: none; /* Let the label to ignore click event. */
   position: absolute;
   top: 15px;
   left: 0;
