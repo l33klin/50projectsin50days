@@ -88,44 +88,14 @@ h1 {
   outline: 0;
 }
 
-/* .faq-toggle .fa-chevron-up {
+.faq-toggle .fa-chevron-up {
   display: none;
 }
 
 .faq.active .faq-toggle .fa-chevron-up {
   display: block;
-} */
+}
 
 .faq.active .faq-toggle .fa-chevron-down {
-  transform: rotateX(180deg);
+  display: none;
 }
-
-.fa-chevron-down {
-  transition: 0.3s rotateX(180deg);
-}
-
-.fa-chevron-down,
-.fa-chevron-up {
-  position: absolute;
-  backface-visibility: hidden; /* 防止翻面时出现翻转的镜像 */
-}
-
-.fa-chevron-down {
-  background: transparent;
-  transform: none;
-  transition: transform 0.5s ease-in-out;
-}
-
-.fa-chevron-up {
-  background: #fff;
-  transform: rotateX(180deg); /* 翻面后的状态 */
-  transition: transform 0.5s ease-in-out;
-}
-
-.faq:active .faq-toggle.fa-chevron-down {
-  transform: rotateX(180deg); /* 翻面后的状态 */
-}
-
-/* .faq:active .faq-toggle .fa-chevron-up {
-  transform: none;
-} */
