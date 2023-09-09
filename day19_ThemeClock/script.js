@@ -50,21 +50,12 @@ function setTime() {
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-
-  hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
-    hoursForClock,
-    0,
-    12,
-    0,
-    360
-  )}deg)`;
-  minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(
-    minutes,
-    0,
-    60,
-    0,
-    360
-  )}deg)`;
+  hourEl.style.transform = `translate(-50%, -100%) rotate(${
+    hoursForClock * 30 + minutes / 2
+  }deg)`;
+  minuteEl.style.transform = `translate(-50%, -100%) rotate(${
+    minutes * 6 + seconds / 10
+  }deg)`;
   secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     seconds,
     0,
