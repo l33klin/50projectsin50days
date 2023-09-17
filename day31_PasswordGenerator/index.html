@@ -23,6 +23,35 @@
         <i class="far fa-clipboard"></i>
       </button>
     </div>
+    <div class="settings">
+      <div class="setting">
+        <label>Password Length</label>
+        <div class="slider">
+          <input type="range" min="4" max="64" value="20" class="slider-input">
+          <output class="slider-output"></output>
+        </div>
+        <input type="number" id="length" min="4" max="64" value="20">
+      </div>
+      <div class="setting">
+        <label>Include uppercase letters</label>
+        <input type="checkbox" name="" id="uppercase" checked>
+      </div>
+      <div class="setting">
+        <label>Include lowercase letters</label>
+        <input type="checkbox" name="" id="lowercase" checked>
+      </div>
+      <div class="setting">
+        <label>Include numbers</label>
+        <input type="checkbox" name="" id="numbers" checked>
+      </div>
+      <div class="setting">
+        <label>Include symbols</label>
+        <input type="checkbox" name="" id="symbols" checked>
+      </div>
+    </div>
+    <button class="btn btn-large" id="generate">
+      Generate Password
+    </button>
   </div>
   <script src="script.js"></script>
 </body>
