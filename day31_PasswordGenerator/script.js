@@ -30,6 +30,22 @@ generateEl.addEventListener("click", function (e) {
   );
 });
 
+clipboardEl.addEventListener("click", function (e) {
+  const textareaEl = document.createElement("textarea");
+  const password = resultEl.innerText;
+
+  if (!password) {
+    return;
+  }
+
+  textareaEl.value = password;
+  document.body.appendChild(textareaEl);
+  textareaEl.select();
+  document.execCommand("copy");
+  textareaEl.remove();
+  alert("Password copied successfully");
+});
+
 function generatePassword(length, uppercase, lowercase, numbers, symbols) {
   let generatedPassword = "";
   const typesArr = [
