@@ -58,6 +58,10 @@ body {
   padding: 20px;
 }
 
+.note .main {
+  padding: 20px;
+}
+
 .hidden {
-  display: hidden;
+  display: none;
 }
