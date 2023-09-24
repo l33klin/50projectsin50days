@@ -25,43 +25,67 @@ body {
 }
 
 .open-btn {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   margin: 10px;
   padding: 5x;
 }
 
-.close-btn {
-  position: absolute;
-  top: 35px;
-  left: 300px;
-  padding: 5px;
-  color: #aaa;
-}
-
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  padding: 30px;
   height: 100vh;
   overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
 }
 
 .nav-black {
-  width: 400px;
-  background-color: black;
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  background-color: #202020;
+  transition-delay: 0.4s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
 }
 
 .nav-red {
-  background-color: red;
-  width: 380px;
+  width: 95%;
+  background-color: #e01020;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.2s;
 }
 
 .nav-white {
   background-color: white;
-  width: 360px;
+  width: 95%;
+  padding: 30px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  padding: 5px;
+  opacity: 0.3;
 }
 
 .nav ul {
@@ -71,7 +95,9 @@ body {
 }
 
 .nav ul a {
-  font-style: none;
+  color: #202020;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .nav ul li ul {
