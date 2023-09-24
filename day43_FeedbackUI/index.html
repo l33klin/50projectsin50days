@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Feedback UI</title>
+</head>
+
+<body>
+  <div class="feedback-container">
+    <p class="title">How satisfied are you with our customer support performance?</p>
+    <div class="rating-choices">
+      <div class="choice selected" id="satisfied" value="satisfied">
+        <img src="img/excited.png" alt="">
+        <span>Satisfied</span>
+      </div>
+      <div class="choice" id="neutral" value="neutral">
+        <img src="img/neutral.png" alt="">
+        <span>Neutral</span>
+      </div>
+      <div class="choice" id="unhappy" value="unhappy">
+        <img src="img/angry.png" alt="">
+        <span>Unhappy</span>
+      </div>
+    </div>
+    <button type="submit" id="submit">Send Review</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
