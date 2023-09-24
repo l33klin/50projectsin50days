@@ -27,7 +27,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.title {
+#question {
   font-size: 20px;
   font-weight: bold;
 }
