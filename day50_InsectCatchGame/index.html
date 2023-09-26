@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Insect Catch Game</title>
+</head>
+
+<body>
+  <div class="screen">
+    <h1>Catch It!!!</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+  <div class="screen">
+    <h1>What is your favorite?</h1>
+    <ul class="obj-list">
+      <li>
+        <button class="choose-obj-btn">
+          <p>Obama</p>
+          <img src="img/obama.png" alt="obama">
+        </button>
+      </li>
+      <li>
+        <button class="choose-obj-btn">
+          <p>Trump</p>
+          <img src="img/trump.png" alt="trump">
+        </button>
+      </li>
+      <li>
+        <button class="choose-obj-btn">
+          <p>Biden</p>
+          <img src="img/biden.png" alt="biden">
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container">
+    <h3 id="time">Time: 00:00</h3>
+    <h3 id="score">Score: 0</h3>
+    <h5 id="message">
+      Are you annoyed yet?<br>
+      You are playing an impossible game!!
+    </h5>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
