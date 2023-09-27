@@ -119,8 +119,31 @@ h1 {
   top: 0;
   left: 50%;
   transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in;
 }
 
 .message.visible {
+  transform: translate(-50%, 150%);
   opacity: 1;
+}
+
+.potrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.potrait.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.potrait img {
+  width: 100px;
+  height: 100px;
 }
